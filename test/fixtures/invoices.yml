@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2019-04-02
+  amount: 
+  paid: false
+  submitted: false
+  cleared: false
+  deductible: 
+
+two:
+  date: 2019-04-02
+  amount: 
+  paid: false
+  submitted: false
+  cleared: false
+  deductible: 
