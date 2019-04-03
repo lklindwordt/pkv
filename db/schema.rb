@@ -18,10 +18,10 @@ ActiveRecord::Schema.define(version: 2019_04_02_110002) do
   create_table "invoices", force: :cascade do |t|
     t.date "date"
     t.integer "amount_cents", default: 0, null: false
-    t.string "amount_currency", default: "USD", null: false
+    t.string "amount_currency", default: "EUR", null: false
     t.string "state"
     t.integer "deductible_cents", default: 0, null: false
-    t.string "deductible_currency", default: "USD", null: false
+    t.string "deductible_currency", default: "EUR", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

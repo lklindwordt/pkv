@@ -1,6 +1,9 @@
 class Invoice < ApplicationRecord
   include AASM
 
+  monetize :amount_cents
+  monetize :monetize :price_cents
+
   aasm :column => 'state' do
     state :unpaid, initial: true
     state :paid
