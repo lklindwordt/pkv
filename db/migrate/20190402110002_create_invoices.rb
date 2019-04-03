@@ -3,9 +3,7 @@ class CreateInvoices < ActiveRecord::Migration[6.0]
     create_table :invoices do |t|
       t.date :date
       t.monetize :amount
-      t.boolean :paid
-      t.boolean :submitted
-      t.boolean :cleared
+      t.string :state
       t.monetize :deductible
 
       t.timestamps

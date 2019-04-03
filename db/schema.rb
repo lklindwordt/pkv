@@ -19,9 +19,7 @@ ActiveRecord::Schema.define(version: 2019_04_02_110002) do
     t.date "date"
     t.integer "amount_cents", default: 0, null: false
     t.string "amount_currency", default: "USD", null: false
-    t.boolean "paid"
-    t.boolean "submitted"
-    t.boolean "cleared"
+    t.string "state"
     t.integer "deductible_cents", default: 0, null: false
     t.string "deductible_currency", default: "USD", null: false
     t.datetime "created_at", precision: 6, null: false
